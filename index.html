@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Recommendation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">Book<span>Rec</span></div>
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#genre">Genre</a>
+            <a href="#signin">Sign In</a>
+        </nav>
+    </header>
+
+    <div class="intro-section" id="home">
+        <h1>Welcome to BookRec</h1>
+        <p>Your gateway to captivating reads and literary gems. Discover hand-picked book recommendations and find your next favorite story today!</p>
+        <button class="explore-btn" onclick="scrollToQuote()">Explore More</button>
+    </div>
+
+    
+    <div class="container">
+        <h1>Book of the Week</h1>
+        <p>Your weekly dose of reading inspiration!</p>
+        <div class="book-card">
+            <img id="book-cover" src="boo.jpg" alt="Book Cover">
+            <h2 id="book-title">Title of the Book</h2>
+            <h3 id="book-author">Author: </h3>
+            <p id="book-summary">Looking for your next great read? Click below for an amazing book recommendation!</p>
+            <button onclick="newBook()">Recommend Another Book</button>
+        </div>
+    </div>
+
+   
+
+    
+    <div class="quote-section">
+        <h1>Quote of the Day</h1>
+        <p id="quote-text">“Believe in yourself.”</p>
+        <p id="quote-author">- Anonymous</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
